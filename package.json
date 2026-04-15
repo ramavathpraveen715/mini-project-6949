@@ -1,0 +1,12 @@
+{
+  "name": "micro-climate-digital-twin",
+  "version": "1.0.0",
+  "description": "Real-time micro-climate digital twin for small farm monitoring",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

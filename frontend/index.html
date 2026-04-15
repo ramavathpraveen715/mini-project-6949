@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farm Micro-Climate Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Small Farm Digital Twin</h1>
+      <p>Real-time micro-climate monitoring dashboard</p>
+    </header>
+
+    <section class="cards">
+      <div class="card">
+        <h2>Temperature</h2>
+        <p><span id="temp">--</span> °C</p>
+      </div>
+      <div class="card">
+        <h2>Humidity</h2>
+        <p><span id="hum">--</span> %</p>
+      </div>
+      <div class="card">
+        <h2>Soil Moisture</h2>
+        <p><span id="soil">--</span></p>
+      </div>
+      <div class="card">
+        <h2>Light</h2>
+        <p><span id="light">--</span></p>
+      </div>
+    </section>
+
+    <section class="status">
+      <h2>System Status</h2>
+      <p><strong>Condition:</strong> <span id="status">--</span></p>
+      <p><strong>Irrigation:</strong> <span id="irrigation">--</span></p>
+      <p><strong>Heat stress:</strong> <span id="stress">--</span></p>
+    </section>
+
+    <footer>
+      <p>Data source: simulated telemetry endpoint</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
