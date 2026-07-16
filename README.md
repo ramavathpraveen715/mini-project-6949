@@ -23,7 +23,6 @@ This project contains:
 - ESP32 development board
 - DHT11 or DHT22 sensor
 - Soil moisture sensor module
-- Light sensor (LDR)
 - Relay module
 - Water pump (optional)
 - Jumper wires and breadboard
@@ -40,11 +39,6 @@ This project contains:
 - VCC -> 3.3V
 - GND -> GND
 - AOUT -> GPIO 34
-
-### LDR Sensor
-- One side -> 3.3V
-- Other side -> GPIO 35
-- Fixed resistor -> GND
 
 ### Relay Module
 - VCC -> 5V
