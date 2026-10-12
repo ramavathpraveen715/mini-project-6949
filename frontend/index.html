@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FarmSense | Humidity Yield Monitor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Farmer control room</p>
+          <h1>FarmSense</h1>
+          <p class="subtitle">Full-dataset yield guidance for better daily decisions.</p>
+        </div>
+        <div id="status" class="status-pill">Connecting…</div>
+      </header>
+
+      <main class="grid">
+        <article class="card">
+          <div class="label-row">
+            <span>Temperature</span>
+            <span id="temp-unit">°C</span>
+          </div>
+          <div class="metric" id="temp">--</div>
+          <div class="bar">
+            <span id="temp-bar"></span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="label-row">
+            <span>Humidity</span>
+            <span>%</span>
+          </div>
+          <div class="metric" id="humidity">--</div>
+          <div class="bar">
+            <span id="humidity-bar"></span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="label-row">
+            <span>Soil Moisture</span>
+            <span>%</span>
+          </div>
+          <div class="metric" id="soil">--</div>
+          <div class="bar">
+            <span id="soil-bar"></span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="label-row">
+            <span>Light</span>
+            <span>%</span>
+          </div>
+          <div class="metric" id="light">--</div>
+          <div class="bar">
+            <span id="light-bar"></span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="label-row">
+            <span>Rain</span>
+            <span>%</span>
+          </div>
+          <div class="metric" id="rain">--</div>
+          <div class="bar">
+            <span id="rain-bar"></span>
+          </div>
+        </article>
+
+        <article class="card wide">
+          <div class="label-row">
+            <span>Last Updated</span>
+            <span id="timestamp">--</span>
+          </div>
+          <div class="summary" id="summary">
+            Waiting for live sensor data...
+          </div>
+        </article>
+
+        <section class="panel wide conditions-panel">
+          <div class="section-heading">
+            <div><p class="eyebrow">Live field checks</p><h2>Condition decisions</h2></div>
+            <span id="irrigation" class="action-pill">Pump OFF</span>
+          </div>
+          <p class="summary" id="explanation">Waiting for live sensor data...</p>
+          <div id="conditions" class="condition-list"></div>
+          <div id="alerts" class="alert-list"></div>
+          <div class="precautions">
+            <h3>Recommended precautions</h3>
+            <ul id="precautions"><li>Waiting for the first sensor reading.</li></ul>
+          </div>
+        </section>
+
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
